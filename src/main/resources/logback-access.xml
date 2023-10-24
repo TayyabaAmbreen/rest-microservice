@@ -1,0 +1,8 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>API logging: %requestURL | status code: %statusCode | bytes: %bytesSent | elapsed time: %elapsedTime | request-log: %requestContent | response-log: %responseContent</pattern>
+        </encoder>
+    </appender>
+    <appender-ref ref="STDOUT"/>
+</configuration>
